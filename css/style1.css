@@ -1,0 +1,109 @@
+/* Variables */
+:root {
+	--primary: #ddd;
+	--dark: #333;
+	--light: #fff;
+	--shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	color: var(--dark);
+}
+
+body {
+	background: #ccc;
+	margin: 30px 50px;
+	line-height: 1.4;
+}
+
+.btn {
+	background: var(--dark);
+	color: var(--light);
+	padding: 0.6rem 1.6rem;
+	text-decoration: none;
+	border: 0;
+}
+
+.wrapper {
+	display: grid;
+	grid-gap: 20px;
+}
+
+.main-nav ul {
+	display: grid;
+	grid-gap: 10px;
+	list-style: none;
+	padding: 0;
+	grid-template-columns: repeat(1, 1fr);
+}
+
+.main-nav a {
+	text-decoration: none;
+	color: var(--dark);
+	padding: 0.6rem 1.6rem;
+	text-transform: lowercase;
+	font-size: 0.8rem;
+}
+
+.main-nav a:hover {
+	background: var(--dark);
+	color: var(--light);
+}
+
+.services-container {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas: 
+		"standard advanced";
+}
+
+.services-container ul {
+	list-style: none;
+}
+
+.standard {
+	grid-area: standard;
+	background: var(--primary);
+	min-height: 400px;
+	padding: 1rem;
+	box-shadow: var(--shadow);
+}
+
+.advanced {
+	grid-area: advanced;
+	background: var(--primary);
+	min-height: 400px;
+	padding: 1rem;
+	box-shadow: var(--shadow);
+}
+
+.box h2, .a-btn {
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
