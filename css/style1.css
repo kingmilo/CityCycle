@@ -35,20 +35,16 @@ body {
 	display: grid;
 	grid-gap: 10px;
 	list-style: none;
-	padding: 0;
+	padding: 0.6rem;
+	background: var(--primary);
 	grid-template-columns: repeat(1, 1fr);
 }
 
 .main-nav a {
 	text-decoration: none;
 	color: var(--dark);
-	padding: 0.6rem 1.6rem;
+	padding: 0.6rem 0.8rem;
 	font-size: 0.8rem;
-}
-
-.main-nav a:hover {
-	background: var(--dark);
-	color: var(--light);
 }
 
 .services-container {
@@ -89,5 +85,13 @@ body {
 
 .box .a-btn {
 	margin-top: auto;
+	text-align: center;
+}
+
+.footer {
+	display: grid;
+	grid-gap: 20px;
+	background: var(--dark);
+	color: var(--light);
 	text-align: center;
 }
