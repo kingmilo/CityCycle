@@ -43,7 +43,6 @@ body {
 	text-decoration: none;
 	color: var(--dark);
 	padding: 0.6rem 1.6rem;
-	text-transform: lowercase;
 	font-size: 0.8rem;
 }
 
@@ -60,10 +59,13 @@ body {
 }
 
 .services-container ul {
-	list-style: none;
+	list-style: square;
+	font-size: 0.9rem;
 }
 
 .standard {
+	display: flex;
+	flex-direction: column;
 	grid-area: standard;
 	background: var(--primary);
 	min-height: 400px;
@@ -72,6 +74,8 @@ body {
 }
 
 .advanced {
+	display: flex;
+	flex-direction: column;
 	grid-area: advanced;
 	background: var(--primary);
 	min-height: 400px;
@@ -79,31 +83,11 @@ body {
 	box-shadow: var(--shadow);
 }
 
-.box h2, .a-btn {
+.box h2 {
 	text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.box .a-btn {
+	margin-top: auto;
+	text-align: center;
+}
