@@ -3,9 +3,9 @@
 	--primary: #ddd;
 	--dark: #333;
 	--light: #fff;
-	--green: #4A4857;
+	--green: #7F5E7A;
 	--shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-	--shadow-green: 0 1px 5px #4A4857;
+	--shadow-green: 0 1px 5px #7F5E7A;
 }
 
 /* HTML & Body */
@@ -170,7 +170,7 @@ img {
 	box-shadow: var(--shadow);
 	color: var(--light);
 	text-align: center;
-	padding: 0.2rem;
+	padding: 20px;
 }
 
 
