@@ -1,0 +1,195 @@
+/* Variables */
+:root {
+	--primary: #ddd;
+	--dark: #333;
+	--light: #fff;
+	--green: #4A4857;
+	--shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+	--shadow-green: 0 1px 5px #4A4857;
+}
+
+/* HTML & Body */
+html {
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	color: var(--dark);
+}
+
+body {
+	background: #ccc;
+	margin: 30px 50px;
+	line-height: 1.4;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* Classes */
+/* Container */
+.container {
+	display: grid;
+	grid-gap: 20px;
+}
+
+/* Buttons */
+.btn {
+	background: var(--green);
+	box-shadow: var(--shadow);
+	color: var(--light);
+	padding: 0.6rem 1.3rem;
+	text-decoration: none;
+	text-align: center;
+	border: 0;
+	width: 100px;
+}
+
+/* Navigation */
+.navigation {
+	background: var(--green);
+	position: fixed;
+	margin-top: -30px;
+	margin-left: -50px;
+	width: 100%;
+}
+
+.main-nav ul {
+	display: grid;
+	grid-gap: 20px;
+	list-style: none;
+	padding: 10px;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.main-nav a {
+	background: var(--green);
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	color: var(--light);
+	text-transform: uppercase;
+	font-size: 0.8rem;
+}
+
+.main-nav a:hover {
+	color: var(--dark);
+	font-weight: bold; 
+}
+
+/* Showcase */
+.showcase-container {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas: 
+		"showcase showcase price-std"
+		"showcase showcase price-pro";
+	margin-top: 80px;
+}
+
+.showcase {
+	grid-area: showcase;
+	min-height: 400px;
+	background: url(../img/bicycle.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	box-shadow: var(--shadow);
+}
+
+.showcase h1 {
+	font-size: 4rem;
+	margin-bottom: 0;
+	color: var(--light);
+}
+
+.showcase p {
+	font-size: 1.3rem;
+	margin-top: 0;
+	color: var(--light);
+}
+
+/* Pricing */
+.price {
+	display: grid;
+	grid-gap: 20px;
+	background: var(--primary);
+	box-shadow: var(--shadow-green);
+	text-align: center;
+	justify-content: center;
+	padding: 1.2rem;
+}
+
+.price .cost {
+	font-size: 2.3rem;
+}
+
+/* Cards */
+
+.cards {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card {
+	background: var(--primary);
+	box-shadow: var(--shadow-green);
+	text-align: center;
+	padding: 1.2rem;
+}
+
+/* Info */
+.info {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(2, 1fr);
+	background: var(--primary);
+	box-shadow: var(--shadow);
+	padding: 0 1rem 0 0;
+}
+
+/* Images */
+.images {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.images img {
+	width: 100%;
+	box-shadow: var(--shadow);
+}
+
+/* Footer */
+.footer {
+	background: var(--green);
+	box-shadow: var(--shadow);
+	color: var(--light);
+	text-align: center;
+	padding: 0.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
