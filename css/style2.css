@@ -3,9 +3,9 @@
 	--primary: #ddd;
 	--dark: #333;
 	--light: #fff;
-	--green: #7F5E7A;
 	--shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-	--shadow-green: 0 1px 5px #7F5E7A;
+	--site-color: rgb(2,0,36);
+  --site-color: linear-gradient(18deg, rgba(2,0,36,1) 6%, rgba(97,94,126,1) 71%, rgba(0,212,255,1) 100%);
 }
 
 /* HTML & Body */
@@ -25,6 +25,11 @@ img {
 	max-width: 100%;
 }
 
+ion-icon {
+  font-size: 64px;
+  color: var(--site-color);
+}
+
 /* Classes */
 /* Container */
 .container {
@@ -34,7 +39,7 @@ img {
 
 /* Buttons */
 .btn {
-	background: var(--green);
+	background: #615E7E;
 	box-shadow: var(--shadow);
 	color: var(--light);
 	padding: 0.6rem 1.3rem;
@@ -46,7 +51,7 @@ img {
 
 /* Navigation */
 .navigation {
-	background: var(--green);
+	background: var(--site-color);
 	position: fixed;
 	margin-top: -30px;
 	margin-left: -50px;
@@ -62,7 +67,7 @@ img {
 }
 
 .main-nav a {
-	background: var(--green);
+	/*background: var(--site-color);*/
 	display: block;
 	text-decoration: none;
 	text-align: center;
@@ -72,7 +77,6 @@ img {
 }
 
 .main-nav a:hover {
-	color: var(--dark);
 	font-weight: bold; 
 }
 
@@ -83,7 +87,7 @@ img {
 	grid-template-areas: 
 		"showcase showcase price-std"
 		"showcase showcase price-pro";
-	margin-top: 80px;
+	margin-top: 60px;
 }
 
 .showcase {
@@ -117,7 +121,7 @@ img {
 	display: grid;
 	grid-gap: 20px;
 	background: var(--primary);
-	box-shadow: var(--shadow-green);
+	box-shadow: var(--shadow);
 	text-align: center;
 	justify-content: center;
 	padding: 1.2rem;
@@ -137,7 +141,7 @@ img {
 
 .card {
 	background: var(--primary);
-	box-shadow: var(--shadow-green);
+	box-shadow: var(--shadow);
 	text-align: center;
 	padding: 1.2rem;
 }
@@ -147,8 +151,9 @@ img {
 	display: grid;
 	grid-gap: 20px;
 	grid-template-columns: repeat(2, 1fr);
-	background: var(--primary);
+	background: var(--site-color);
 	box-shadow: var(--shadow);
+	color: var(--light);
 	padding: 0 1rem 0 0;
 }
 
@@ -166,30 +171,9 @@ img {
 
 /* Footer */
 .footer {
-	background: var(--green);
+	background: var(--site-color);
 	box-shadow: var(--shadow);
 	color: var(--light);
 	text-align: center;
 	padding: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
