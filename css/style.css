@@ -78,8 +78,8 @@ img {
 	text-transform: uppercase;
 }
 
-.main-nav a:active
-.main-nav a:hover, {
+.main-nav a:hover,
+.main-nav a:active {
 	font-weight: bold;
   transform: scale(1.2);
 }
