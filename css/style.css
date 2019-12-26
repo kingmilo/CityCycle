@@ -231,6 +231,12 @@ nav ul {
 	grid-template-columns: 1fr;
 }
 
+/* Cards */
+.card a {
+	display: block;
+	text-align: center;
+}
+
 }
 
 /* End 
