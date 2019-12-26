@@ -204,19 +204,35 @@ footer {
 and (min-device-width : 375px) 
 and (max-device-width : 812px) {
 
+/* Navigation */
+nav ul {
+	grid-gap: 40px;
+	grid-template-columns: 1fr;
+}
+
+
 /* Showcase */
 .showcase-container {
 	grid-template-areas: 
 		"showcase"
 		"price-std"
 		"price-pro";
-		margin-top: 250px;
+	margin-top: 250px;
 }
+
+
+/* Pricing */
+.price a {
+	justify-content: initial;
+	margin: auto;
+}
+
 
 /* Cards */
 .cards {
 	grid-template-columns: 1fr;
 }
+
 
 /* Info */
 .info {
@@ -224,41 +240,6 @@ and (max-device-width : 812px) {
 	padding: 1rem;
 }
 
-
-/* Navigation */
-nav ul {
-	grid-gap: 40px;
-	grid-template-columns: 1fr;
-}
-
-/* Cards */
-.card a {
-	display: block;
-	text-align: center;
-}
-
 }
 
 /* End 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
