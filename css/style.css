@@ -194,8 +194,9 @@ footer {
 
 
 /* Media queries for mobile */
-@media only screen 
-and (min-width: 824px) {
+@media screen 
+and (max-width: 824px) {
+/*and (min-width: 320px) {*/
 
 /* body */
 body {
