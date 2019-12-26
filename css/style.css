@@ -1,4 +1,4 @@
-/* Variables */
+ /* Variables */
 :root {
 /* Colors */
 	--background: #ccc;
@@ -198,4 +198,43 @@ footer {
 	text-align: center;
 }
 
-/* End */
+
+/* Media queries for mobile */
+@media only screen and (max-width: 600px) {
+
+/* Showcase */
+.showcase-container {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas: 
+		"showcase"
+		"price-std"
+		"price-pro";
+	margin-top: 60px;
+}
+
+}
+
+/* End 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
