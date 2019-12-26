@@ -222,7 +222,7 @@ nav ul {
 
 
 /* Pricing */
-.price a {
+.price {
 	justify-content: initial;
 	margin: auto;
 }
