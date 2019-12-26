@@ -6,6 +6,11 @@
 	--shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 	--site-color: rgb(2,0,36);
   --site-color: linear-gradient(18deg, rgba(2,0,36,1) 6%, rgba(97,94,126,1) 71%, rgba(0,212,255,1) 100%);
+  --new-shadow: -6px -6px 6px 0 rgba(255,255,255,1), 6px 6px 6px 0 rgba(0, 0, 0, .3);
+}
+
+:focus {
+	outline: none;
 }
 
 /* HTML & Body */
@@ -23,11 +28,6 @@ body {
 
 img {
 	max-width: 100%;
-}
-
-ion-icon {
-  font-size: 64px;
-  color: var(--site-color);
 }
 
 /* Classes */
@@ -67,7 +67,6 @@ ion-icon {
 }
 
 .main-nav a {
-	/*background: var(--site-color);*/
 	display: block;
 	text-decoration: none;
 	text-align: center;
@@ -76,8 +75,10 @@ ion-icon {
 	font-size: 0.8rem;
 }
 
-.main-nav a:hover {
-	font-weight: bold; 
+.main-nav a:hover,
+.main-nav a:active {
+	font-weight: bold;
+  transform: scale(1.2);
 }
 
 /* Showcase */
@@ -120,8 +121,8 @@ ion-icon {
 .price {
 	display: grid;
 	grid-gap: 20px;
-	background: var(--primary);
-	box-shadow: var(--shadow);
+	background: var(--light);
+	box-shadow: var(--new-shadow);
 	text-align: center;
 	justify-content: center;
 	padding: 1.2rem;
@@ -140,10 +141,11 @@ ion-icon {
 }
 
 .card {
-	background: var(--primary);
-	box-shadow: var(--shadow);
+	background: var(--light);
+	box-shadow: var(--new-shadow);
 	text-align: center;
 	padding: 1.2rem;
+	z-index: -1;
 }
 
 /* Info */
