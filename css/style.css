@@ -206,13 +206,29 @@ and (max-device-width : 812px) {
 
 /* Showcase */
 .showcase-container {
-	display: grid;
-	grid-gap: 20px;
 	grid-template-areas: 
 		"showcase"
 		"price-std"
 		"price-pro";
-	margin-top: 60px;
+		margin-top: 250px;
+}
+
+/* Cards */
+.cards {
+	grid-template-columns: 1fr;
+}
+
+/* Info */
+.info {
+	grid-template-columns: 1fr;
+	padding: 1rem;
+}
+
+
+/* Navigation */
+nav ul {
+	grid-gap: 40px;
+	grid-template-columns: 1fr;
 }
 
 }
